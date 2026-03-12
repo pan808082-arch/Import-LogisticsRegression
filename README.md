@@ -1,1 +1,6 @@
-# Import-LogisticsRegression
+from sklearn.linear_model import LogisticRegression
+x = [[10], [20], [30], [80]]
+y = [0,0,1,0]
+model = LogisticRegression()
+model.fit(x, y)
+print(model.predict([[50]]))# Import-LogisticsRegression
